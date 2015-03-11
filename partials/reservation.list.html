@@ -1,0 +1,50 @@
+<div class="row">
+    <div id="1row" class="columns large-12">
+        <p><font size="6"> <br>
+	    </div>      
+	    </div> 	 
+        
+		
+  	   
+	   <div class="row">
+        <div class="small-1 large-1 columns"></div>    
+        <section class="reservation" ng-repeat="reservation in reservations | orderBy: 'resourceId' | limitTo: 1">	
+	    <div id="large" class="small-5 large-5 columns"> {{reservation.resourceName}}
+	    <div id="datum">{{clock | date:'MMMM dd, yyyy'}}</div>
+		</div>   
+        </section>
+	   
+	    <a href="#/issues/{{id}}">  	  
+	    <div id="mitten2" class="small-6 large-6 columns">        
+	    <p class="callout  text-center">		 	    
+		<img src="img/people.png" width="25">&nbsp;x {{resource.maxParticipants || "&infin;"}}
+	    <font size="6">| 
+	    <img src="img/projector.png" width="40">&nbsp;|  
+	    <img src="img/tv.png"        width="35">&nbsp;|  
+        <img src="img/phone.png"     width="35">&nbsp;| 
+	    <img src="img/ligtbulb.png"  width="22">		 
+	    </font>
+    </div>
+</div>
+</a>
+
+<div class="row">
+    <div id="klocka" class="small-6 medium-6 large-6 columns">{{ clock | date:'HH:mm' }}</div>
+    <div id="mitten3" "small-1 medium-1 large-1 columns"></div>
+    <div class="small-5 medium-5 large-5 columns">
+        <br>
+        <section class="reservation" ng-repeat="reservation in reservations | limitTo: 3">
+            <font color="white">	       
+		<div class="{{reservation.meetingStateClass}}">{{reservation.meetingState}}</div>
+		<div id="text">
+	    {{reservation.startDate | date:'HH:mm'}} - {{reservation.endDate | date:'HH:mm'}}<br>
+	    {{reservation.firstName}} {{reservation.lastName}}<br>	
+	    {{reservation.verb}} {{reservation.timeleft}}<br>	 
+		</div> 
+		<br>		 
+	    
+		
+		</div>	
+	    </div>	
+	    </div>	 	   
+	    </section>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/authentication.js"></script>
+    <script src="scripts/services/reservations.js"></script>
+    <script src="scripts/services/resources.js"></script>
+    <script src="scripts/services/token-interceptor.js"></script>
+    <script src="scripts/services/user.js"></script>
+    <script src="scripts/controllers/authentication.js"></script>
+    <script src="scripts/controllers/reservations.js"></script>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <meta name="mobile-web-app-capable" content="yes">
+
+	
+	
+	
+    <script>
+       /*
+         * Set Authentication.isAuthenticated to true if 200 is
+         * received.
+         */
+        window.addEventListener('load', function (e) {
+            setTimeout(function () {
+                window.scrollTo(0, 1);
+            }, 1);
+        }, false);
+    </script>
+
+    <title>Chronos</title>
+</head>
+
+<body>
+    <div ng-view class="reveal-animation"></div>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>
